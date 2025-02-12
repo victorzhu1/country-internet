@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
 
-require('dotenv').config();
+require("dotenv").config({ path: "../.env" });
 
 const dbConnection = require('./dbConnection');
 const Country = require('../models/Country');

@@ -6,6 +6,7 @@ const Statistics = require('../models/Statistics');
 
 const resetData = async () => {
     try {
+        console.log("Connecting to MongoDB...");
         await connectDB();
         await Country.deleteMany({});
 
